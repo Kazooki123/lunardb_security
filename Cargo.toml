@@ -1,0 +1,15 @@
+[package]
+name = "lunar_security"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "lunar_security"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+libc = "0.2"
+regex = "1.11.1"
+
+[build-dependencies]
+cbindgen = "0.24"
