@@ -1,7 +1,9 @@
 [package]
 name = "lunar_security"
+author = ["Kazooki123", "Starloexoliz"]
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 
 [lib]
 name = "lunar_security"
@@ -10,6 +12,14 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 libc = "0.2"
 regex = "1.11.1"
+sqlparser = "0.52.0"
+lazy_static = "1.5.0"
+validator = { version = "0.19", features = ["derive"] }
+serde_json = "1.0.133"
+
+[dependencies.html-escape]
+version = "*"
+default-features = false
 
 [build-dependencies]
 cbindgen = "0.24"
